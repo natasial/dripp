@@ -18,7 +18,7 @@ class OrganizationTable:
             
         cur = con.cursor()
         cur.execute("DROP TABLE orgs")
-        
+        cur.execute("DROP TABLE tasksByOrg")
           
         cur.execute("CREATE TABLE orgs(orgName VARCHAR(100), tag VARCHAR(50), upVotes INT, downVotes INT)")
         cur.execute("INSERT INTO orgs VALUES('Independent Animal Rescue,Inc.','animals', 15, 5)")
@@ -41,15 +41,15 @@ class OrganizationTable:
         
 
 
-        cur.execute("CREATE TABLE tasksByOrg (orgName VARCHAR(50), task VARCHAR(100), currentFunding INT, goalFunding INT, dateAdded DATE)") #imageURL
-        cur.execute("INSERT INTO tasksByOrg VALUES('Independent Animal Rescue', 'Provide the full cost of veterinery care for a litter of kittens', 312, 500, TO_DATE('4/15/2014','MM/DD/YYYY'))")   
-        cur.execute("INSERT INTO tasksByOrg VALUES('Independent Animal Rescue', 'Purchase five additional leashes for dogs in house', 4, 20, TO_DATE('4/15/2014','MM/DD/YYYY'))")   
-        cur.execute("INSERT INTO tasksByOrg VALUES('African American Dance Ensemble', 'Rent five new costumes for upcoming Fall Showcase, Dancing through the Ages', 71, 75, TO_DATE('4/15/2014','MM/DD/YYYY'))") 
-        cur.execute("INSERT INTO tasksByOrg VALUES('Adolescent Parenting Program', 'Purchase SAT Textbooks for parents of high schoolers', 30, 100, TO_DATE('4/15/2014','MM/DD/YYYY'))") 
-        cur.execute("INSERT INTO tasksByOrg VALUES('Catholic Charities', 'Hire four independent food venders for Harvest Festival on July 30 ', 114, 175, TO_DATE('4/15/2014','MM/DD/YYYY'))") 
-        cur.execute("INSERT INTO tasksByOrg VALUES('Justice Matters', 'Pamphlet the City with Crime Awareness for Youth', 6, 25, TO_DATE('4/15/2014','MM/DD/YYYY'))") 
+        cur.execute("CREATE TABLE tasksByOrg (orgName VARCHAR(50), task VARCHAR(100), currentFunding INT, goalFunding INT, dateAdded DATE, imageURL VARCHAR(200))") #imageURL
+        cur.execute("INSERT INTO tasksByOrg VALUES('Independent Animal Rescue,Inc.', 'Provide the full cost of veterinery care for a litter of kittens', 312, 500, TO_DATE('4/15/2014','MM/DD/YYYY'), 'http://i1170.photobucket.com/albums/r537/natasial1/kittens_zps5c0aa397.png')")   
+        cur.execute("INSERT INTO tasksByOrg VALUES('Independent Animal Rescue,Inc.', 'Purchase five additional leashes for dogs in house', 4, 20, TO_DATE('4/15/2014','MM/DD/YYYY'), 'http://i1170.photobucket.com/albums/r537/natasial1/dog_zps68f259c7.png')")   
+     #   cur.execute("INSERT INTO tasksByOrg VALUES('African American Dance Ensemble', 'Rent five new costumes for upcoming Fall Showcase, Dancing through the Ages', 71, 75, TO_DATE('4/15/2014','MM/DD/YYYY'))") 
+        cur.execute("INSERT INTO tasksByOrg VALUES('Adolescent Parenting Program', 'Purchase SAT Textbooks for parents of high schoolers', 30, 100, TO_DATE('4/15/2014','MM/DD/YYYY'), 'http://i1170.photobucket.com/albums/r537/natasial1/sats_zps93aeed71.png')") 
+        cur.execute("INSERT INTO tasksByOrg VALUES('Catholic Charities', 'Hire four independent food venders for Harvest Festival on July 30 ', 114, 175, TO_DATE('4/15/2014','MM/DD/YYYY'), 'http://i1170.photobucket.com/albums/r537/natasial1/food_zps8acefdc6.png')") 
+      #  cur.execute("INSERT INTO tasksByOrg VALUES('Justice Matters', 'Pamphlet the City with Crime Awareness for Youth', 6, 25, TO_DATE('4/15/2014','MM/DD/YYYY'))") 
         cur.execute("INSERT INTO tasksByOrg VALUES('NC Rescue', 'Provide food and first aid supplies to families in Durham County affected by Hurricane Sandra', 375, 425, TO_DATE('4/15/2014','MM/DD/YYYY'))") 
-        cur.execute("INSERT INTO tasksByOrg VALUES('Strong Couples, Strong Children', 'Hire an additional counselor for the month of April to match high demand for counseling', 320, 600, TO_DATE('4/15/2014','MM/DD/YYYY'))") 
+        cur.execute("INSERT INTO tasksByOrg VALUES('Strong Couples, Strong Children', 'Hire an additional counselor for the month of April to match high demand for counseling', 320, 600, TO_DATE('4/15/2014','MM/DD/YYYY'), 'http://i1170.photobucket.com/albums/r537/natasial1/kids_zpsae66a9cf.png')") 
 
         con.commit()
         #except psycopg2.DatabaseError, e:
@@ -85,8 +85,8 @@ class OrganizationTable:
         finalSearch = finalSearch + ")"
         
 
-        print "SELECT (orgName, task, currentFunding, goalFunding) FROM tasksByOrg where orgName in " + finalSearch
-        cur.execute("SELECT (orgName, task, currentFunding, goalFunding) FROM tasksByOrg where orgName in " + finalSearch)
+        #print "SELECT (orgName, task, currentFunding, goalFunding, imageURL) FROM tasksByOrg where orgName in " + finalSearch
+        cur.execute("SELECT (orgName, task, currentFunding, goalFunding, imageURL) FROM tasksByOrg where orgName in " + finalSearch)
         res2 = cur.fetchall()
 
         if con:

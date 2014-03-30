@@ -1,3 +1,4 @@
+
 body {
 	background-color:#FAF7DA;
 }
@@ -7,15 +8,17 @@ span.logoImage{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 300px;
+  margin-bottom: 100px;
+ }
+
+img{
+  height:500px;
 }
-
-
 
 .form-inline{
   margin: 60px auto;
-
+  max-width:400px;
 text-align: center;
 border: 1 px solid;
 
