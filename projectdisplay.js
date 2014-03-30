@@ -69,7 +69,7 @@ function showMoney(){
 $( document ).ready(function()  {
 
 $( "#shownproject" ).dblclick(function() {
-  alert( "Handler for .dblclick() called." );
+ 
   current = current +1; 
   showImage();
   showTitle();
