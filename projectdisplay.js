@@ -7,7 +7,7 @@ window.onload = function() {
 
 function showImage(){
  var project_page = document.getElementById('shownproject');
-  project_page.querySelector('p.image').innerHTML = "<img src= 'http://radiofreethinker.files.wordpress.com/2013/04/zoo-atlanta-giant-panda-atlanta-usa-giant-panda-endangered-species-giant-facts-about-pandas-bear-habitat-panda-bear-panda-migration-travel-destination-beautiful-amazing-zoo-panda-animal.jpg'> </img>";
+  project_page.querySelector('p.image').innerHTML = "<img src= 'kittens.png'> </img>";
  
   
 }
