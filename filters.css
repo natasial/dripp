@@ -1,3 +1,5 @@
+@media only screen and (max-width: 640px) {}
+  
 body {
   background-color:#faf7da;
   font-family: 'Open Sans', sans-serif;
@@ -11,9 +13,8 @@ body {
   color:#7ED3F7;
   text-align:left;
   font-size:60px;
-  font-style:italic;
   line-height:110%;
-  margin-top:5%;
+  margin-top:10%;
   margin-left:10%;
   margin-right:10%;
 }
@@ -22,4 +23,19 @@ body {
   font-size:30px;
   margin-top:20px;
   margin-left:90px;
+}
+
+table {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10%;
+  width:640px;
+  font-size:40px;
+  color:#faf7da;
+  background-color:#7ED3F7;
+}
+
+th,td{
+  padding:35px;
+  border:2px solid #faf7da;
 }
