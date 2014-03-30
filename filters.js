@@ -26,7 +26,7 @@ function submitChoices() {
 }
 
 $( "#nextbutton" ).dblclick(function() {
-  alert( "Handler for .dblclick() called." );
+  
   window.location.href = "projectdisplay.html";});
 
 
