@@ -17,7 +17,7 @@ $( "#splashimage" ).click(function() {
   var project_page = document.getElementById('splashimage');
    project_page.innerHTML="<img src=" + splashimages[current]+ "> </img>";
                                              current = current + 1; 
-if (current == 3) {
+if (current == 4) {
   window.location.href = 'filters.html';
 }
 });
