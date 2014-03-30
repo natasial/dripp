@@ -66,6 +66,8 @@ function showMoney(){
    project_page.querySelector('p.dollars').innerHTML= projectcosts[current];
 }
 
+$( document ).ready(function()  {
+
 $( "#shownproject" ).dblclick(function() {
   alert( "Handler for .dblclick() called." );
   current = current +1; 
@@ -82,6 +84,9 @@ $("body").bind("swipeleft", function(e) {
 $("body").bind("swiperight", function(e) {
   showTitle2();
   
+});
+
+
 });
                
                

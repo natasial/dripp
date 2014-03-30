@@ -11,14 +11,19 @@ splashimages = ["http://i1170.photobucket.com/albums/r537/natasial1/intro1_zpsf8
 };
 
 
+$( document ).ready(function()  {
 $( "#splashimage" ).click(function() {
-alert("click is recognized");
+
   var project_page = document.getElementById('splashimage');
    project_page.innerHTML="<img src=" + splashimages[current]+ "> </img>";
                                              current = current + 1; 
 if (current == 3) {
   window.location.href = 'filters.html';
 }
+});
+
+
+
 });
 
    

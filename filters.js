@@ -1,5 +1,5 @@
 
-
+$( document ).ready(function()  {
 var index = 0;
 
 $('td').on('click', function() {
@@ -28,6 +28,11 @@ function submitChoices() {
 $( "#nextbutton" ).dblclick(function() {
   alert( "Handler for .dblclick() called." );
   window.location.href = "projectpage.html";});
+
+
+
+
+});
   
 
 
