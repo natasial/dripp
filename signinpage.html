@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+  <meta charset="utf-8">
+  <title>Make An Account</title>
+</head>
+<body>
+
+  
+<div class="row">
+<div class="col-sm-2">
+</div>
+<div class="col-sm-8 well" style="background-color: #ffffff">
+<div class="container">
+<div class="row">
+<div class="col-sm-2">
+</div>
+<div class="col-sm-8">
+<form action="/signup" class="form" method="POST">
+        <div style="display: none">
+        <input id="csrf_token" name="csrf_token" type="hidden" value="1383635238.9##d8f7f433e854cc682ade261cd9bb7113a147ee29" />
+        </div>
+        <div class="heading">
+        <h4 class="form-heading">Make an Account</h4>
+        </div>
+        <div class="form-group ">
+        <label for="email">Email address</label>
+        <input class="form-control" id="email" name="email" type="text" value="elawibowo@gmail.com" /> 
+        <p class="help-block">
+         
+        
+        </div>
+        <div class="form-group  has-error ">
+        <label for="password">Pick a secure password</label>
+        <input class="form-control" id="password" name="password" type="password" />
+        <p class="help-block">
+        This field is required.
+        
+        </div>
+        <div class="form-group  has-error ">
+        <label for="username">Choose your username</label>
+        <input class="form-control" id="username" name="username" type="text" /> 
+        <p class="help-block">
+        This field is required.
+        
+        </div>
+        <div class="form-group  has-error ">
+        <label class="checkbox">
+        <input id="agree" name="agree" type="checkbox" value="y" /> <label for="agree">I agree all your </label></label>Terms of Services
+        <p class="help-block">
+        You must accept our Terms of Service
+        
+        </div>
+        <button class="btn btn-success" type="submit">Sign Up</button>
+</form>
+</div>
+<div class="col-sm-2">
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-2">
+</div>
+</div>
+
+
+</body>
+</html>
