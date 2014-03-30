@@ -1,0 +1,25 @@
+body {
+  background-color:#faf7da;
+  font-family: 'Open Sans', sans-serif;
+  height:1136px;
+  width:640px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.question {
+  color:#7ED3F7;
+  text-align:left;
+  font-size:60px;
+  font-style:italic;
+  line-height:110%;
+  margin-top:5%;
+  margin-left:10%;
+  margin-right:10%;
+}
+
+.options {
+  font-size:30px;
+  margin-top:20px;
+  margin-left:90px;
+}
