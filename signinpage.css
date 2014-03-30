@@ -3,20 +3,17 @@ span.logoImage{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 0px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 
 
-.userbuttons {
-  margin: 60px auto;
-width: 400px;
+.form-inline{
+  margin: 0px auto;
+
 text-align: center;
 border: 1 px solid;
-}
-
-.btn{
-	background-color: #7ED3FZ;
 }
 
 
