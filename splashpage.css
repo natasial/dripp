@@ -1,0 +1,24 @@
+span.logoImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+
+.userbuttons {
+  margin: 60px auto;
+width: 400px;
+text-align: center;
+border: 1 px solid;
+}
+
+
+
+.container {
+  max-width: 500 px;
+  margin: 0 auto;
+ 
+}
