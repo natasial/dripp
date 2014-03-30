@@ -20,6 +20,9 @@ window.onload = function() {
 
 function loadProjectNames() {
   projectnames = ["waffle", "waffle2", "waffle3"];
+  max = projectnames.length;
+
+
 }
 
 function loadProjectImages() {
@@ -69,12 +72,22 @@ function showMoney(){
 $( document ).ready(function()  {
 
 $( "#shownproject" ).dblclick(function() {
+	
+	if (current == max-1) {
+
+  	window.location = 'finalchoices.html';
+  	}
  
-  current = current +1; 
+
   showImage();
   showTitle();
   showDescription();
+  console.log("showingmoney");
   showMoney();
+    current = current +1; 
+
+
+ 
 });
 
 $("body").bind("swipeleft", function(e) {
