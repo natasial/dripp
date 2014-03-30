@@ -19,7 +19,14 @@ window.onload = function() {
 };
 
 function loadProjectNames() {
+<<<<<<< HEAD
   projectnames = ["Buy Enough Food to Feed a Kitten for 1 Month", "Buy Urban Ministries 3 New Beds for the Homeless", "Buy 2 SAT Books for the Adolescent Parenting Program"];
+=======
+  projectnames = ["waffle", "waffle2", "waffle3"];
+  max = projectnames.length;
+
+
+>>>>>>> 0823f4cf673b3183112a6f86b2c7353a70a6427e
 }
 
 function loadProjectImages() {
@@ -68,12 +75,22 @@ function showMoney(){
 $( document ).ready(function()  {
 
 $( "#shownproject" ).dblclick(function() {
+	
+	if (current == max-1) {
+
+  	window.location = 'finalchoices.html';
+  	}
  
-  current = current +1; 
+
   showImage();
   showTitle();
   showDescription();
+  console.log("showingmoney");
   showMoney();
+    current = current +1; 
+
+
+ 
 });
 
 $("body").bind("swipeleft", function(e) {

@@ -27,7 +27,7 @@ function submitChoices() {
 
 $( "#nextbutton" ).dblclick(function() {
   
-  window.location.href = "projectdisplay.html";});
+  window.location = "cost.html";});
 
 
 
