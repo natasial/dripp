@@ -19,12 +19,11 @@ window.onload = function() {
 };
 
 function loadProjectNames() {
-  projectnames = ["waffle", "waffle2", "waffle3"];
+  projectnames = ["Buy Enough Food to Feed a Kitten for 1 Month", "Buy Urban Ministries 3 New Beds for the Homeless", "Buy 2 SAT Books for the Adolescent Parenting Program"];
 }
 
 function loadProjectImages() {
-  projectimages = ["http://lorempixel.com/400/200/sports/", "http://lorempixel.com/output/food-q-c-640-480-6.jpg", "http://lorempixel.com/output/fashion-q-c-640-480-7.jpg"];
-}
+  projectimages = ["http://i1170.photobucket.com/albums/r537/natasial1/kittens_zps5c0aa397.png", "http://i1170.photobucket.com/albums/r537/natasial1/kids_zpsae66a9cf.png", "http://s1170.photobucket.com/user/natasial1/media/sats_zps93aeed71.png.html"];
 
 function loadDescriptions() {
   projectdescriptions = ["description1", "description2", "description3"];
@@ -32,7 +31,7 @@ function loadDescriptions() {
 }
 
 function loadProjectCosts() {
-  projectcosts = ["5", "6", "7"];
+  projectcosts = ["$50", "$300", "$60"];
 }
 
 
