@@ -1,0 +1,29 @@
+
+body {
+	background-color:#FAF7DA;
+    margin-left:0px;
+    margin-right:auto;
+
+}
+
+img {
+  text-align:center;
+}
+
+table {
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.navbar {
+  display:block;
+  background-color:#faf7da;
+  padding:50px;
+  color:#7ED3F7;
+  border-color: #faf7da;
+  font-family: 'Open Sans', sans-serif;
+  text-align:center;
+  font-size:60px;
+  line-height:110%;
+  background-image: none;
+}
