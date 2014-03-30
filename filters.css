@@ -4,15 +4,15 @@ body {
   background-color:#faf7da;
   font-family: 'Open Sans', sans-serif;
   height:1136px;
-  width:640px;
-  margin-left:auto;
-  margin-right:auto;
+  width:100%;
+  margin-left:0px;
+  margin-right:0px;
 }
 
 .question {
   color:#7ED3F7;
-  text-align:left;
-  font-size:60px;
+  text-align:center;
+  font-size:80px;
   line-height:110%;
   margin-top:10%;
   margin-left:10%;
@@ -20,17 +20,17 @@ body {
 }
 
 .options {
-  font-size:30px;
+  font-size:40px;
   margin-top:20px;
   margin-left:90px;
 }
 
 table {
   padding: 10px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left:0px;
+  margin-right:0px;
   margin-top:600 px;
-  width:640px;
+  width:100%;
   font-size:40px;
 
   
@@ -61,4 +61,3 @@ table td.active {background: #b6d1d8;}
   line-height:110%;
   background-image: none;
 }
-
