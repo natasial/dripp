@@ -1,6 +1,16 @@
 body
 {
 background: #FAF7DA; 
+font-family: 'Open Sans', sans-serif;
+  margin-left:10%;
+  margin-right:10%
+}
+
+.title{
+  font-size:30px;
+  font-weight: 700;
+  margin-top:10%;
+  margin-bottom:10%;
 }
 
 .project{
@@ -13,14 +23,14 @@ background: #FAF7DA;
   width: 300px;
   height: 300px;
   border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
   background: "kittens.png" no-repeat;
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   margin-top: 0px;
+
+.description {
+  font-size:20px;
+  margin-top:10%;
 }
-
-
